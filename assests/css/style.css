@@ -130,19 +130,19 @@ body {
 }
 
 #humidity {
-  width: 100%;
+  width: 45%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #humidity-img {
-  width: 40%;
+  width: 50%;
   transform: scale(0.4);
 }
 
 #humidity-cap {
-  width: 60%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,7 +162,7 @@ body {
 }
 
 #wind-speed {
-  width: 100%;
+  width: 55%;
   display: flex;
   align-items: center;
   justify-content: center;
