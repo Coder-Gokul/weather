@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- linking css -->
+    <link rel="stylesheet" href="assests/css/style.css">
+
+    <!-- linking font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- linking Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- main-wrapper-starts -->
+    <main id="wrapper">
+  
+        <!-- main container starts-->
+        <article id="container">
+
+            <section id="top-container">
+
+                <!-- search section starts-->
+                <input type="text" name="" id="search" placeholder="enter city name" autocomplete="off">
+                <button id="search-btn" onclick="start()">
+                    <i class="bi bi-search"></i>
+                </button>
+                <!-- search section starts-->
+            </section>
+
+            <!-- Error section starts -->
+            <section class="errorDiv">
+                <p class="error">Invalid City name !</p>
+            </section>
+            <!-- Error section ends -->
+
+            <section id="middle-container">
+
+                <!-- weather section starts-->
+                <figure id="weather">
+                    <img class="print-weather" src="assests/images/clear.png" alt="weather-img">
+                </figure>
+                <figcaption id="degree">
+                    <p class="degree-text"><span class="print-degree"></span>&degC</p>
+                </figcaption>
+                <figcaption id="place">
+                    <p class="place-text"></p>
+                </figcaption>
+                <!-- weather section ends-->
+
+            </section>
+
+            <section id="bottom-container">
+
+                <!-- Humidity section starts-->
+                <div id="humidity">
+                    <figure id="humidity-img">
+                        <img src="/assests/images/humidity.png" alt="humidity-img">
+                    </figure>
+                    <figcaption id="humidity-cap">
+                        <div class="value">
+                            <p><span class="print-humidity">100</span>%</p>
+                        </div>
+                        <div class="text">Humidity</div>
+                    </figcaption>
+                </div>
+                <!-- Humidity section ends-->
+
+                <!-- wind speed section starts-->
+                <div id="wind-speed">
+                    <figure id="wind-speed-img">
+                        <img src="/assests/images/wind.png" alt="">
+                    </figure>
+                    <figcaption id="wind-speed-cap">
+                        <div class="value">
+                            <p><span class="print-wind">1.85</span> Km/h</p>
+                        </div>
+                        <div class="text">Wind Speed</div>
+                    </figcaption>
+                </div>
+                <!-- wind speed section ends-->
+
+            </section>
+        </article>
+        <!-- main container starts-->
+
+    </main>
+    <!-- main-wrapper-ends -->
+
+    <!-- linking js -->
+    <script src="assests/js/script.js"></script>
+</body>
+
+</html>
